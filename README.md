@@ -1,5 +1,3 @@
-src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
@@ -24,37 +22,7 @@ Tương tác Cơ sở dữ liệu: Sử dụng Eloquent ORM và Migrations để
 Bảo mật: Áp dụng các biện pháp bảo mật tiêu chuẩn của Laravel như CSRF Protection, XSS Protection (qua Blade escaping), Data Validation (qua Form Requests), và bảo vệ khỏi SQL Injection (qua Eloquent).
 Sơ đồ cấu trúc (Class Diagram)
 Sơ đồ thể hiện mối quan hệ giữa các Model chính trong dự án.
-Generated mermaid
-classDiagram
-    class User {
-        +id: int
-        +name: string
-        +email: string
-        +is_admin: boolean
-    }
-
-    class Category {
-        +id: int
-        +name: string
-        +slug: string
-    }
-
-    class Product {
-        +id: int
-        +name: string
-        +slug: string
-        +price: decimal
-        +stock: int
-        +image: string
-        +category_id: int
-        +isNew(): boolean
-    }
-
-    User "1" -- "0..*" Product : (Có thể có quan hệ nếu có Đơn hàng)
-    Category "1" -- "0..*" Product : hasMany
-    Product "1" -- "1" Category : belongsTo
-Use code with caution.
-Mermaid
+**![ui](images/sodothuattoantoystore.drawio.png)
 Sơ đồ thuật toán (Activity Diagram)
 Thuật toán: Hiển thị sản phẩm theo Danh mục được chọn
 Sơ đồ này mô tả luồng hoạt động khi người dùng click vào một danh mục ở sidebar để lọc sản phẩm.

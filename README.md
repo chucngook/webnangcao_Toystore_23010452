@@ -276,5 +276,4 @@ public function index()
 ###. Liên kết
 
 Link Repository: [https://github.com/chucngook/webnangcao_Toystore_23010452]
-Link Deploy: [
-Link Readme.io: [
+Link Readme.io: [https://chucngook.github.io/Webnc_README/]

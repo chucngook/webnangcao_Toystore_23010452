@@ -26,22 +26,7 @@ Sơ đồ thể hiện mối quan hệ giữa các Model chính trong dự án.
 Sơ đồ thuật toán (Activity Diagram)
 Thuật toán: Hiển thị sản phẩm theo Danh mục được chọn
 Sơ đồ này mô tả luồng hoạt động khi người dùng click vào một danh mục ở sidebar để lọc sản phẩm.
-Generated mermaid
-graph TD
-    A[Bắt đầu] --> B{Người dùng click vào một danh mục};
-    B --> C[Request được gửi đến URL<br>/categories/{slug}];
-    C --> D[Laravel Route tìm và gọi<br>CategoryController@show];
-    D --> E[Controller nhận slug,<br>tìm Category tương ứng trong CSDL];
-    E --> F{Tìm thấy Category?};
-    F -- Không --> G[Trả về lỗi 404];
-    F -- Có --> H[Lấy tất cả sản phẩm<br>thuộc về Category đó (có phân trang)];
-    H --> I[Lấy danh sách tất cả<br>các Category để hiển thị sidebar];
-    I --> J[Trả về view 'products.index'<br>cùng với biến: $products, $categories, $selectedCategory];
-    J --> K[View render ra HTML,<br>tô đậm danh mục được chọn và hiển thị lưới sản phẩm đã lọc];
-    K --> L[Kết thúc];
-    G --> L;
-Use code with caution.
-Mermaid
+**![ui](images/toystore.drawio.png)**
 Ảnh chụp màn hình chức năng chính
 <details>
 <summary><strong>Nhấn vào đây để xem ảnh chụp màn hình</strong></summary>

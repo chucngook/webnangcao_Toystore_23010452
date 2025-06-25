@@ -1,0 +1,1 @@
+<h1>Hello, đây là trang test view!</h1>

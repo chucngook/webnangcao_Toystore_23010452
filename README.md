@@ -27,20 +27,25 @@ Sơ đồ thuật toán (Activity Diagram)
 Thuật toán: Hiển thị sản phẩm theo Danh mục được chọn
 Sơ đồ này mô tả luồng hoạt động khi người dùng click vào một danh mục ở sidebar để lọc sản phẩm.
 **![ui](images/toystore.drawio.png)**
+
+
+
 Ảnh chụp màn hình chức năng chính
 <details>
 <summary><strong>Nhấn vào đây để xem ảnh chụp màn hình</strong></summary>
 1. Trang chủ với Slider và Sản phẩm mới
-![alt text](URL_ANH_TRANG_CHU_CUA_BAN)
+**![alt text](images/a1.png)**
 2. Trang danh sách sản phẩm với Sidebar lọc danh mục
-![alt text](URL_ANH_TRANG_SAN_PHAM_CUA_BAN)
+**![alt text](images/a2.png)**
 3. Trang quản lý sản phẩm (Admin)
-![alt text](URL_ANH_ADMIN_PRODUCT_INDEX_CUA_BAN)
+**![alt text](images/a3.png)**
 4. Form Sửa sản phẩm với đầy đủ thông tin (Admin)
-![alt text](URL_ANH_ADMIN_PRODUCT_EDIT_CUA_BAN)
+**![alt text](images/a4.png)**
 5. Trang quản lý danh mục (Admin)
-![alt text](URL_ANH_ADMIN_CATEGORY_INDEX_CUA_BAN)
+**![alt text](images/a5.png)**
 </details>
+
+
 Code minh họa phần chính
 1. Model: Product.php
 Mô hình hóa đối tượng Sản phẩm, định nghĩa các trường được phép gán và mối quan hệ belongsTo với Category.
